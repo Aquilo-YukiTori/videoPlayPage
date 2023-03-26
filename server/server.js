@@ -88,7 +88,7 @@ app
 .use(cors())
 .use(koaStatic(path.join(__dirname, staticPath)))
 .use(router.routes()).use(router.allowedMethods())
-.use(logger())
+// .use(logger())
 
 // https.createServer(options, app.callback()).listen('7891', () => {
 //   console.log('starting at port 7891')
